@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+.canvasContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    width: 512px;
+}
+.pixel{
+    width: 30px;
+    height: 30px;
+    background-color: wheat;
+}
+/* removes dragging */
+.pixel, .pixel::after, .pixel::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+	cursor: default;
+}
