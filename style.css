@@ -4,18 +4,38 @@ body{
     background-color: grey;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toolContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .canvasContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2px;
-    width: 512px;
+    /* gap: 1px ; */
+    width: 350px;
 }
 .pixel{
-    width: 30px;
-    height: 30px;
-    background-color: wheat;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(184, 184, 184);
+    background-color: rgb(255, 255, 255);
 }
 /* removes dragging */
 .pixel, .pixel::after, .pixel::before {
