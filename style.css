@@ -5,6 +5,8 @@ body{
 }
 
 .main{
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,8 +15,9 @@ body{
 
 .moduleContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 .toolContainer{
     display: flex;
@@ -23,18 +26,18 @@ body{
     align-items: center;
     gap: 10px;
 }
-.canvasContainer{
+.canvas{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     /* gap: 1px ; */
-    width: 350px;
+    width: 320px;
 }
 .pixel{
     width: 20px;
     height: 20px;
-    border: 1px solid rgb(184, 184, 184);
+    /* border: 1px solid rgb(184, 184, 184); */
     background-color: rgb(255, 255, 255);
 }
 /* removes dragging */
@@ -43,4 +46,9 @@ body{
 	-webkit-user-drag: none;
 	-webkit-app-region: no-drag;
 	cursor: default;
+}
+
+.width, .height{
+    width: 50px;
+    text-align: center;
 }

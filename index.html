@@ -9,7 +9,7 @@
 <body>
 
     <div class="main">
-        <div class="title">Etch-a-Sketch</div>
+        <div class="title">Pixel Painter</div>
         <div class="title">Press and hold to draw</div>
 
         <div class="moduleContainer">
@@ -18,15 +18,20 @@
                 <button type="button" class="eraseButton">Erase</button>
                 <input type="color" class="colorPicker">
                 <div>Canvas Size</div>
-                <select class="canvasSize">
-                    <option value="16x16">16x16</option>
-                    <option value="32x32">32x32</option>
-                    <option value="64x64">64x64</option>
-                </select>
+                <span>
+                    <input type="text" class="width" placeholder="Width">
+                    x 
+                    <input type="text" class="height" placeholder="Height">
+                </span>
+                <button type="button" class="canvasButton">Resize</button>
             </div>
+
             <div class="canvasContainer">
-                <!-- "pixels" get generated here -->
+                <div class="canvas">
+                    <!-- "pixels" get generated here -->
+                </div>
             </div>
+
         </div>
 
     </div>
