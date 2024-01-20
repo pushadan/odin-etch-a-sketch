@@ -9,21 +9,19 @@
 <body>
 
     <div class="main">
-        <div class="title">Pixel Painter</div>
-        <div class="title">Press and hold to draw</div>
+        <div class="header">
+            <div class="title">Pixel Painter</div>
+            <div class="title">Press and hold to draw</div>
+        </div>
 
         <div class="moduleContainer">
             <div class="toolContainer">
                 <button type="button" class="brushButton">Brush</button>
                 <button type="button" class="eraseButton">Erase</button>
                 <input type="color" class="colorPicker">
-                <div>Canvas Size</div>
-                <span>
-                    <input type="text" class="width" placeholder="Width">
-                    x 
-                    <input type="text" class="height" placeholder="Height">
-                </span>
-                <button type="button" class="canvasButton">Resize</button>
+                <input type="text" class="canvasSizeDisplay" readonly>
+                <input type="range" min="1" max="64" value="16" class="canvasSizeSlider">
+                <button type="button" class="resizeButton">Resize</button>
             </div>
 
             <div class="canvasContainer">

@@ -31,12 +31,13 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* gap: 1px ; */
-    width: 320px;
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
 }
 .pixel{
-    width: 20px;
-    height: 20px;
+    width: 31.25px;
+    height: 31.25px;
     /* border: 1px solid rgb(184, 184, 184); */
     background-color: rgb(255, 255, 255);
 }
@@ -48,7 +49,7 @@ body{
 	cursor: default;
 }
 
-.width, .height{
+.canvasSizeDisplay{
     width: 50px;
     text-align: center;
 }
